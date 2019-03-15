@@ -22,6 +22,7 @@ print("是{0}位数".format(n))
 w=['个位：','十位','百位','千位','万位','十万位']
 for i in zip(w,list(l)):
     print(i,end=" ")
+print("\n")
 print("*"*80)
 #题目：一个5位数，判断它是不是回文数。即12321是回文数，个位与万位相同，十位与千位相同。
 输入数字2=str(input("your numbers: "))
@@ -32,7 +33,29 @@ for i in range(0,int(n/2)+1):
         flag=False
 if flag==True:
     print("是回文")
+else:
+    print("不是回文")
 print("*" * 80)
+#题目：按逗号分隔列表。
+L = [1,2,3,4,5]
+s1 = ','.join(str(n) for n in L)
+print (s1)
+print("*" * 80)
+#题目：文本颜色设置。
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+print (bcolors.WARNING + "警告的颜色字体?" + bcolors.ENDC)
+
+
+
+
 
 
 
